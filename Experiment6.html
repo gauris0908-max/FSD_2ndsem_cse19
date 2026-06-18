@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Lab</title>
+    <link rel="stylesheet" href="Experiment6.css">
 </head>
 <body>
 
-    <center>
-        <div class ="container">
-            <h1>Welcome to JavaScript Lab</h1>
+    <div class="container">
 
-            <input type="text" placeholder="Enter new heading text">
-            <br><br>
+        <h1 id="heading">Welcome to JavaScript Lab</h1>
 
-            <button>Change Heading</button>
-            <button>Change Background</button>
-            <button>Increase Font Size</button>
-            <br><br>
+        <input type="text"
+               id="textInput"
+               placeholder="Enter new heading text">
 
-            <button>Show/Hide Paragraph</button>
-            <button>Reset</button>
+        <div class="buttons">
+            <button onclick="changeHeading()">Change Heading</button>
+            <button onclick="changeBackground()">Change Background</button>
+            <button onclick="increaseFont()">Increase Font Size</button>
+            <button onclick="toggleParagraph()">Show/Hide Paragraph</button>
+            <button onclick="resetPage()">Reset</button>
+        </div>
 
-            <p> This is a sample paragraph. JavaScript events can dynamically change content.</p>
-        </div class = "container">
-    </center>
+        <p id="paragraph">
+            This is a sample paragraph. JavaScript events can dynamically change content.
+        </p>
+
+    </div>
+
+    <script src="Experiment6.js"></script>
 
 </body>
 </html>
