@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="nav-logo">
+                <h2>amazon</h2>
+            </div>
+
+            <!-- Location -->
+            <div class="nav-location">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <small>Deliver to</small>
+                    <p>India</p>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="nav-search">
+
+                <select>
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                    <option>Books</option>
+                </select>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search Amazon">
+
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+            <!-- Sign In -->
+            <div class="nav-signin">
+                <small>Hello, Sign in</small>
+                <p>Account & Lists</p>
+            </div>
+
+            <!-- Orders -->
+            <div class="nav-orders">
+                <small>Returns</small>
+                <p>& Orders</p>
+            </div>
+
+            <!-- Cart -->
+            <div class="nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </div>
+
+        </nav>
+
+        <!-- Secondary Navbar -->
+
+        <div class="sub-nav">
+
+            <a href="#">All</a>
+            <a href="#">Today's Deals</a>
+            <a href="#">Customer Service</a>
+            <a href="#">Prime</a>
+            <a href="#">Fashion</a>
+            <a href="#">Electronics</a>
+            <a href="#">Mobiles</a>
+
+        </div>
+
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>Welcome to Amazon Clone</h1>
+            <p>Discover products, deals and more.</p>
+            <button>Shop Now</button>
+        </div>
+
+    </section>
+
+    <!-- PRODUCTS -->
+
+    <main>
+
+        <h2 class="section-title">
+            Today's Best Deals
+        </h2>
+
+        <div class="products" id="productContainer">
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500">
+
+                <h3>Nike Running Shoes</h3>
+
+                <p class="price">₹2999</p>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500">
+
+                <h3>iPhone 15</h3>
+
+                <p class="price">₹79999</p>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500">
+
+                <h3>Smart Watch</h3>
+
+                <p class="price">₹4999</p>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500">
+
+                <h3>Wireless Headphones</h3>
+
+                <p class="price">₹1999</p>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1585386959984-a41552231658?w=500">
+
+                <h3>Laptop Backpack</h3>
+
+                <p class="price">₹1499</p>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500">
+
+                <h3>DSLR Camera</h3>
+
+                <p class="price">₹45999</p>
+
+                <button onclick="addToCart()">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-top">
+            Back To Top
+        </div>
+
+        <div class="footer-content">
+
+            <div>
+                <h4>Get to Know Us</h4>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Blog</p>
+            </div>
+
+            <div>
+                <h4>Connect With Us</h4>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>LinkedIn</p>
+            </div>
+
+            <div>
+                <h4>Help</h4>
+                <p>Contact</p>
+                <p>Support</p>
+                <p>FAQ</p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            ©️ 2026 Amazon Clone | Built by Kartik Kumar
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
