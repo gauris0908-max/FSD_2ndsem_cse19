@@ -1,0 +1,1 @@
+console.log("Responsive Bootstrap Web Page Loaded Successfully!");
