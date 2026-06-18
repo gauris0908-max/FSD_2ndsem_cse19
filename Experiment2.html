@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="Experiment2.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #212529;
+            color: white;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TechStore</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Heading -->
+    <div class="container text-center mt-5">
+        <h1>Welcome to TechStore</h1>
+        <p class="text-muted">Latest Gadgets at Best Prices</p>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="container mt-5">
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
+                        class="card-img-top">
+
+                    <div class="card-body">
+                        <span class="badge bg-success">New</span>
+
+                        <h5 class="card-title mt-2">iPhone 15</h5>
+
+                        <p class="card-text">
+                            Powerful smartphone with A16 Bionic chip.
+                        </p>
+
+                        <p class="price">₹79,999</p>
+
+                        <button class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#productModal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=500"
+                        class="card-img-top">
+
+                    <div class="card-body">
+                        <span class="badge bg-danger">Sale</span>
+
+                        <h5 class="card-title mt-2">Laptop</h5>
+
+                        <p class="card-text">
+                            High-performance laptop for coding and gaming.
+                        </p>
+
+                        <p class="price">₹65,999</p>
+
+                        <button class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#productModal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+                        class="card-img-top">
+
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark">
+                            Hot
+                        </span>
+
+                        <h5 class="card-title mt-2">Headphones</h5>
+
+                        <p class="card-text">
+                            Wireless headphones with amazing sound quality.
+                        </p>
+
+                        <p class="price">₹4,999</p>
+
+                        <button class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#productModal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Product Details</h5>
+
+                    <button class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        This product comes with premium features,
+                        warranty support and excellent performance.
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 TechStore. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="Experiment2.js"></script>
+
+</body>
+</html>
